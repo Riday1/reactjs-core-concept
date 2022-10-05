@@ -32,7 +32,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  color: white;
+  background-color: rgb(78, 67, 67);
+  border-radius: 20px;
+  padding: 0px 30px;
+  ;
+}
+
+.myClass {
+  background-color: lightcyan;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid gray;
 }
