@@ -1,68 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 
-
-const employes = {
+const employe = {
   backgroundColor: 'lightskyblue',
-  padding: '10px',
-  margin: '10px 0px',
+  padding: '0px 10px',
   borderRadius: '20px',
-  border: '2px solid black'
+  border: '2px solid black',
+  marginBottom: '10px'
 }
-const Player = {
-  backgroundColor: 'lightcyan',
-  padding: '10px',
-  margin: '10px 0px',
-  borderRadius: '20px',
-  border: '2px solid black'
-}
+
+
 
 function App() {
+  const employes = [{ name: 'sofik alam', salary: 20000, address: 'Bonani' }, { name: 'riday hossain', salary: 20000, address: 'khilkhet' }]
   return (
     <div className="App">
-      <Employee name="kolur bolod" age="34" designation="Marketing Officer"></Employee>
 
-      <Employee name="Kopila shundori" age="30" designation="HR"></Employee>
-      <Players name="Pa-ponda" profession="crickter"></Players>
-      
+      <Employee name={employes[0].name} salary={employes[0].salary}></Employee>
+      <Employee></Employee>
+
 
 
     </div >
   );
 }
 
-
-function Players(props) {
-  console.log(props)
-  return (
-    <div style={Player} className='person'>
-      <h1>Name : {props.name}</h1>
-      <p>professtion : {props.profession}</p>
-    </div>
-  )
-}
-
-
 function Employee(props) {
-  console.log(props)
+
   return (
-    <div style={employes} className='emoployes'>
-      <h2>Name: {props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Designation:{props.designation}</p>
+    <div style={employe}>
+      <h2>Name :{props.name} </h2>
+      <h5>Salary :{props.salary} </h5>
+      <h5>Address :{props.address}</h5>
     </div>
   )
 }
 
-function Friends() {
-  return (
-
-    <div>
-      <h1>Name : shorif</h1>
-      <p>Address : keranigonj</p>
-    </div>
-  )
-}
 
 
 
